@@ -46,6 +46,19 @@ if errorlevel 1 (
     exit /b 0
 )
 
+:: Check if genai is installed
+python -c "import genai" >nul 2>&1
+if errorlevel 1 (
+    echo genai library not found. Attempting to install...
+    python -m pip install genai
+    if errorlevel 1 (
+        echo Failed to install genai library. Please check your internet connection and try again.
+        pause
+        exit /b 1
+    )
+    echo genai library installed successfully.
+)
+
 :run_script
 if not exist "%CONFIG_FILE%" (
     echo Configuration not found. Please enter the following details:
