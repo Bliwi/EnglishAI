@@ -17,5 +17,6 @@ You will need to have python `3.10 - 3.11` installed in your computer. The batch
 
 1. Import the anki deck into Anki.
 2. Add words to the Words.csv file.
+2.5. Get a gemini API key from [here](https://aistudio.google.com/apikey).   
 3. Run the EnglishAI.bat script.
 4. Practice!
