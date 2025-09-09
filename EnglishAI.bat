@@ -47,10 +47,10 @@ if errorlevel 1 (
 )
 
 :: Check if genai is installed
-python -c "import genai" >nul 2>&1
+python -c "import google.genai" >nul 2>&1
 if errorlevel 1 (
     echo genai library not found. Attempting to install...
-    python -m pip install genai
+    python -m pip install google.genai
     if errorlevel 1 (
         echo Failed to install genai library. Please check your internet connection and try again.
         pause
@@ -108,4 +108,5 @@ if errorlevel 1 (
     echo Script executed successfully.
     echo You may close this window now.
     pause
+
 )
