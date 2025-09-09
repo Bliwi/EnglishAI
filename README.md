@@ -21,7 +21,7 @@ Genai python library `pip install genai` the script will attempt to install this
 2. Import the anki deck into Anki.
 3. Install the AnkiConnect plugin [here](https://ankiweb.net/shared/info/2055492159).
 4. Add words to the Words.csv file.
-5. Install python `3.10 or 3.11` [here](https://www.python.org/downloads/).
+5. Install python `3.10 or 3.11` [here](https://www.python.org/downloads/release/python-3110/).
 6. Get a gemini API key from [here](https://aistudio.google.com/apikey).   
 3. Run the EnglishAI.bat script.
 4. Practice!
